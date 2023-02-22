@@ -26,7 +26,7 @@
     <header>
        <nav class="navbar">
         <div class="navbar-first-part">
-            <h1 class="nav-mono fa-brands fa-raspberry-pi" style="color: #5E35B1;" >
+            <h1 class="nav-mono fa-brands fa-raspberry-pi">
                 <strong style="font-family: 'Roboto', sans-serif; color: black;">BERRY</strong></h1>
            <button class="navbutton">
             <i class="nav-symbole fa fa-bars"></i>
@@ -41,11 +41,11 @@
                 </div>
                 <div class="nav-side-parent">
                    <div> <i class="fa-solid fa-podcast"></i></div>
-                   <div><i class="nav-skey fa-solid fa-language" style="padding: 9px 5px ;"></i></div>
+                   <div><i class="nav-skey fa-solid fa-language" id="nav-sky-first"></i></div>
                     <div><i class=" fa-regular fa-bell"></i></div>
-                    <div id="setting-hover" class="nav-skey" style="border-radius: 30px;">
+                    <div id="setting-hover" class="nav-skey" >
                         <img class="nav-image" src="https://tse4.mm.bing.net/th?id=OIP.BMFtPuyeulM2z9bG1vRzEQHaHa&pid=Api&P=0"/>
-                        <div class="fa-solid fa-gear" style="padding-left: 10px;"></div>
+                        <div class="settingpadding fa-solid fa-gear"></div>
                     </div>
                 </div>
         </div>
@@ -58,43 +58,43 @@
     <aside style="position:fixed">
             <div class="sidebar">
                 <ul>
-                    <span style="color: black; line-height: 0px;"> Deshboard</span>
+                    <span class="mainheading"> Deshboard</span>
                     <li>
-                        <a href="default.html" style="display: flex;" target="_parent">
+                        <a href="default.html" class="flex-li-containt" target="_parent">
                         <i class="child-mono fa-regular fa-clock"></i> 
                         <div class="child-menu" >Default</div>
                             </a>
                     </li>
                     <li>
-                        <a href="#maincontaint" style="display: flex;" target="_parent">
+                        <a href="#maincontaint" class="flex-li-containt" target="_parent">
                         <i class="fa-solid fa-chart-line"></i> 
                         <div> Analytics</div>
                         </a>
                     </li>
                 </ul>
                 <ul>
-                    <span style="color: black;">Widget</span>
-                    <li><a href="#" style="display: flex;"  target="_parent">
+                    <span class="mainheading"> Widget </span>
+                    <li><a href="#" class="flex-li-containt"  target="_parent">
                             <i class="fa-solid fa-circle-notch"></i> 
                             <div> Statistics</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;"  target="_parent">
+                        <a href="#" class="flex-li-containt"  target="_parent">
                             <i class="fa-regular fa-paste"></i> 
                             <div> Data</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;"  target="_parent">
+                        <a href="#" class="flex-li-containt"  target="_parent">
                             <i class="fa-solid fa-chart-simple"></i> 
                             <div> Chart</div>
                         </a>
                     </li>
                 </ul>
                 <ul>
-                <span style="color: black;">Application</span>
-                    <li id="dropdown" style="display: flex; flex-wrap: wrap;">
+                <span class="mainheading"> Application </span>
+                    <li id="dropdown">
                         <i class="fa-solid fa-user-check"></i> 
                                     <div>
                                     Users
@@ -128,24 +128,24 @@
                         <i class="fa-solid fa-ship"></i> 
                         <div> Customer</div>
                     </li>
-                    <li><a href="#" style="display: flex;" target="_parent">
+                    <li><a href="#" class="flex-li-containt" target="_parent">
                         <i class="fa-regular fa-comments"></i> 
                         <div> Chat</div>
                     </a>
                 </li>
                 
-                <li><a href="#" style="display: flex;" target="_parent">
+                <li><a href="#" class="flex-li-containt" target="_parent">
                     <i class="fa-regular fa-bars-progress"></i> 
                     <div> Kanban</div>
                     </a>
                 </li>    
                 <li>
-                    <a href="#" style="display: flex;" target="_parent">
+                    <a href="#" class="flex-li-containt" target="_parent">
                         <i class="fa-regular fa-envelope"></i> 
                         <div> Mail</div>
                     </a>
                 </li>
-                    <li></a> <a href="#" style="display: flex;" target="_parent">
+                    <li></a> <a href="#" class="flex-li-containt" target="_parent">
                         <i class="fa-regular fa-calendar"></i> 
                         <div>Calender</div>
                         </a>
@@ -160,7 +160,7 @@
                     </li>
                 </ul>
                 <ul>
-                    <span style="color: black;">Forms</span>
+                    <span class="mainheading"> Forms </span>
                     <li style="display: flex;">
                         <i class="fa-brands fa-creative-commons-share"></i> 
                         <div> Components</div>
@@ -182,13 +182,13 @@
                         <div>Charts</div>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-brands fa-wpforms"></i> 
                             <div>Form Validation</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-solid fa-hat-wizard"></i> 
                             <div>Form Wizard</div>
                         </a>
@@ -196,7 +196,7 @@
                 </ul>
             
                 <ul>
-                    <span style="color: black;">UI Element</span>
+                    <span class="mainheading">UI Element</span>
                     <li style="display: flex;">
                         <i class="fa fa-paintbrush"></i> 
                         <div> Basic <br>
@@ -210,7 +210,7 @@
                 </ul>
             
                 <ul style="line-height: 15px;">
-                    <span style="color: black;">Pages <br/>
+                    <span class="mainheading">Pages <br/>
                         <span style="font-size: 0.8em;">Prebuild Pages</span>
                     </span>
                     <li style="display: flex;">
@@ -226,25 +226,25 @@
                         <div>Maintenance</div>
                     </li>
                     <li >
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                         <i class="fa-regular fa-bell"></i> 
                         <div> Landing</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa fa-phone"></i> 
                             <div>Contact US</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-regular fa-question"></i> 
                             <div>FAQs</div>
                         </a>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-brands fa-ubuntu"></i> 
                             <div>Privacy Policy</div>
                         </a>
@@ -252,20 +252,20 @@
                 </ul>
             
                 <ul>
-                    <span style="color: black;"> Utilities</span>
-                        <li><a href="#" style="display: flex;" target="_parent">
+                    <span class="mainheading"> Utilities</span>
+                        <li><a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-regular fa-a"></i> 
                             <div>Typography</div>
                         </a>
                     </li>
                         <li>
-                            <a href="#" style="display: flex;" target="_parent">
+                            <a href="#" class="flex-li-containt" target="_parent">
                                 <i class="fa fa-palette"></i> 
                                 <div>Color</div>
                             </a>
                         </li>
                         <li>
-                            <a href="#" style="display: flex;" target="_parent">
+                            <a href="#" class="flex-li-containt" target="_parent">
                                 <i class="fa-brands fa-slideshare"></i> 
                                 <div>Shadow</div>
                             </a>
@@ -275,21 +275,21 @@
                         <div>Icons</div>
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa fa-radiation"></i> 
                             <div>Amimation</div>
                         </a>
                     </li>
-                    <li style="margin-bottom: 0px;"><a href="#" style="display: flex;" target="_parent">
+                    <li style="margin-bottom: 0px;"><a href="#" class="flex-li-containt" target="_parent">
                         <i class="fa fa-table-cells-large"></i> 
                         <div>Grid</div>
                     </a>
                     </li>
                 </ul>
                 <ul>
-                    <span style="color: black;"> Others </span>
+                    <span class="mainheading"> Others </span>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa fa-bars"></i> 
                             <div>Menu Levels</div>
                         </a>
@@ -308,7 +308,7 @@
                         <div>Disabled Menu</div> 
                     </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent" class="beges-perent">
+                        <a href="#" target="_parent" class="beges-perent">
                            <div class="beges-child" style="display: flex;">
                             <i class="fa-regular fa-circle"></i> 
                             <div>Oval Chip</div>
@@ -325,8 +325,8 @@
                                 <div>Avatar</div>
                             </div>
                             <div class="beges-child">
-                                 <span class="bages" style="border-radius: 20px; padding: 4px ;  display: inline-flex; align-items: center;"> 
-                                        <span class="bages" style="padding: 3px 4px; margin-right: 5px;  background-color:#1E88E5; float: left;" > c 
+                                 <span class="bages" id="bages-coded"> 
+                                        <span class="bages" id="bages-c"> c 
                                         </span>
                                      Coded
                                 </span>
@@ -340,7 +340,7 @@
                                 <div>Outlined</div>
                                 </div>
                                 <div class="beges-child">
-                                <span class="bages" style="background-color: white; border-radius: 20px; color: #1E88E5;"> Outlined </span>
+                                <span class="bages" id="bages-outline"> Outlined </span>
                                 </div>
                         </a>
                     </li>
@@ -348,18 +348,18 @@
             
                 <ul>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa-brands fa-chrome"></i> 
                             <div>Sample Page</div>
                         </a>
                     </li>
-                   <li> <a href="#" style="display: flex;" target="_parent">
+                   <li> <a href="#" class="flex-li-containt" target="_parent">
                     <i class="fa-regular fa-file-lines"></i> 
                     <div>Documentaion</div>
                 </a>
             </li>
                     <li>
-                        <a href="#" style="display: flex;" target="_parent">
+                        <a href="#" class="flex-li-containt" target="_parent">
                             <i class="fa fa-sitemap"></i> 
                             <div>Roadmap</div>
                         </a>
@@ -367,17 +367,18 @@
                 </ul>
              <ul style="border: none;">
                 <div class="box">
-                  <div >
-                        <i class="fa fa-table" style="float: left;"></i> 
-                        <div style="font-size: 12px; padding-left: 2px; color: #1565C0;"><b>Get Extra Space</b><br/>
-                             <span style=" font-size: 0.9em; color: rgb(132, 133, 135); line-height: 40px;">28/23 GB</span>
+                  <div class="spacebox">
+                        <i class="fa fa-table"></i> 
+                        <div class="speceboxmain"><b>Get Extra Space</b><br/>
+                             <span class="spacesmallhead">28/23 GB</span>
                         </div>
                   </div>
-                    <div style="padding-top:4px;">
+                    <div class="progress-block">
                         <b>Progress </b>
-                        <span style="float: right; color: rgb(11, 10, 10);">80%</span>
-                        <progress id="file" value="80" max="100" > 80% </progress>
+                        <span class="progress-word">80%</span>
+                        
                     </div>
+                    <progress id="file" value="80" max="100" > 80% </progress>
             </div>
             </ul>
                         <ul class="version" style="border: none;">
@@ -522,32 +523,32 @@
                 <table >
                             <td style="border-top-left-radius: 10px;">
                             <i class="icons fa fa-share-nodes"></i>
-                            <div class="countstatus" style="font-weight: 10px;">1000<br/>
-                                <span style=" color: #697586; ">SHARES</span>
+                            <div class="countstatus">1000<br/>
+                                <span >SHARES</span>
                             </div>  
                         </td>
                         <td style="border-top-right-radius: 10px;">
                             <i class="icons fa-solid fa-wifi"></i>
-                            <div class="countstatus" style="font-weight: 10px;">600<br/>
-                                <span style="color: #697586; ">NETWORK</span>
+                            <div class="countstatus">600<br/>
+                                <span >NETWORK</span>
                             </div>
                         </td>
                    
                         <td style="border-bottom-left-radius: 10px;">
                             <i class="icons fa-solid fa-chart-bar"></i>
-                            <div class="countstatus" style="font-weight: 10px;">3550<br/>
-                                <span style="color: #697586; ">RETURNS</span>
+                            <div class="countstatus">3550<br/>
+                                <span>RETURNS</span>
                             </div>
                         </td>
                         <td style="border-bottom-right-radius: 10px;">
                             <i class="icons fa-solid fa-tv" ></i>
-                            <div class="countstatus" style="font-weight: 10px;">100%<br/>
-                                <span style=" color: #697586; ">ORDER</span>
+                            <div class="countstatus">100%<br/>
+                                <span>ORDER</span>
                             </div>
                         </td>
                 </table>
             </div>
-            <div style="display:flex; flex-direction: column;">
+            <div class="revenue-containt">
                 <div class="revenue">
                     <b>Total Revenue</b>
                 </div>
@@ -625,14 +626,14 @@
                 </div>
             </div>
             <div class="daily-user">
-                    <h2 style="font-size: 20px;">1,658</h2>
+                    <h2>1,658</h2>
                     <span >Daily user</span>
                     <div class="daily-user-icon">
                         <i class="fa-regular fa-user"></i>
                     </div>
             </div>
-            <div class="daily-user" style="background-color: #2196F3; margin-top: 0px;">
-                <h2 style="font-size: 20px;">1K</h2>
+            <div class="daily-user" id="daily-user-pages">
+                <h2 >1K</h2>
                 <span>Daily page view</span>
                 <div class="daily-view-icon">
                     <i class="fa-regular fa-file-lines"></i>

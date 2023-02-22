@@ -11,41 +11,41 @@ body{
 .navbar{
     background-color: #FFFFFF;
     width: 100%;
-    height: 5.1em;
-    display: inline-flex;
+    height: 100px;
+    display: flex;
     font-family:'Roboto', sans-serif;
     position: fixed;
     top: 0%;
     z-index: 1;
-    
 }
+
 .navbar-first-part{
-background-color: white;
-width: 320px;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    background-color: white;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .nav-mono{
-font-family:'Roboto', sans-serif;
-font-size: 25px;
+    font-family:'Roboto', sans-serif;
+    font-size: 25px;
+    color: #5E35B1;
 }
+
 .navbutton{
     background-color: #EDE7F6;
     color: #5E35B1;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
     border: none;
 }
 .navbutton:hover{
-    padding: 0px;
-    margin: 0px;
     background-color: #5E35B1;
     border-radius: 10px;
     color: #EDE7F6;
 }
+
 nav i{
     font-size: 1.2em;
     background-color: #EDE7F6;
@@ -54,12 +54,14 @@ nav i{
     box-sizing: border-box;
     padding: 10px;
 }
+
 nav i:hover{
     background-color: #5E35B1;
     padding: 10px;
     border-radius: 10px;
     color: #EDE7F6;
 }
+
 .navbar-second-part{
     margin-right: 20px;
     width: 100%;
@@ -69,26 +71,30 @@ nav i:hover{
     box-sizing: border-box;
     padding: 10px;
 }
-#setting-hover:hover{
-color: white;
-background-color: #2196F3;
+#setting-hover{
+    border-radius: 30px;
 }
+
+.settingpadding{
+    padding-left: 10px;
+}
+#setting-hover:hover{
+    color: white;
+    background-color: #2196F3;
+}
+
 .navbar-second-part input{
     width: 30em;
     height: 45px;
     box-sizing: border-box;
     background-color: #F8FAFC;
     border: none;
-    margin: 0px;
-    padding: 0px;
 }
 
 .input-searchbar{
-    width: 25em;
+    width: 400px;
     height: 50px;
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
     border-radius: 8px;
     background-color: #F8FAFC;
     border: 1px solid #D7DBE1;
@@ -96,20 +102,23 @@ background-color: #2196F3;
     justify-content: center;
     align-items: center;
 }
+
 .input-searchbar:hover{
     border-color: black;
 }
+
 .input-searchbar:active{
     border: 1px solid #1E88E5;
 }
+
 .search-icon-first{
     background-color: #F8FAFC;
     border: none;
     padding: 10px;
-    margin: 0px;
 }
+
 .search-icon-last{
-    font-size: 1.2em;
+    font-size: 20px;
     background-color: #EDE7F6;
     color: #5E35B1;
     border-radius: 10px;
@@ -117,21 +126,27 @@ background-color: #2196F3;
     padding: 8px;
     margin-right: 10px;
 }
+
 .search-icon-last:hover{
     background-color: #5E35B1;
     padding: 8px;
     border-radius: 10px;
     color: #EDE7F6;
 }
+
 .nav-side-parent{
     width: 250px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-
 }
+
+nav #nav-skey-first{
+    padding: 9px 5px;
+}
+
 nav .nav-skey{
-    font-size: 1.2em;
+    font-size: 18px;
     padding: 5px 10px;
     background-color:#E3F2FD;
     color: #2196F3;
@@ -141,12 +156,14 @@ nav .nav-skey{
     display: inline-flex;
     align-items: center;
 }
+
 nav .nav-skay:hover{
     background-color: #2196F3;
     padding: 5px;
     border-radius: 5px;
     color: #EDE7F6;
 }
+
 nav .nav-image{
     border-radius: 80%;
     width: 30px;
@@ -159,36 +176,36 @@ nav .nav-image{
 .sidebar{
     position: relative;
 }
+
+
 aside{
-    width: 250px;
-    height: calc(100vh - 56px);
+    width: 260px;
+    height: auto;
     background-color: #FFFFFF;
-    z-index: 1;
     position: fixed;
     height: 100%;
-    scrollbar-gutter:calc(10px);
     box-sizing: border-box;
-    margin: 0px;  
     overflow: auto hidden; 
 }
+
 aside:hover{
     overflow: auto;
 }
 
-
 aside::-webkit-scrollbar{
     width: 6px;
 }
+
 aside::-webkit-scrollbar-track{
    border-radius: 10px;
 }
+
 aside::-webkit-scrollbar-thumb{
     border-radius: 10px;
     background-color: #788392;
  }
 
 aside .sidebar ul{
-    padding: 0px;
     color: rgb(18, 25, 38);
     font-size: 0.875rem;
     color: rgb(18, 25, 38);
@@ -198,7 +215,9 @@ aside .sidebar ul{
     flex-wrap: wrap;
     border-bottom: 1px solid #EDE7F6;
     padding-bottom: 8px;
-    
+}
+.mainheading{
+    color: black;
 }
 
 .sidebar ul li{
@@ -208,13 +227,14 @@ aside .sidebar ul{
      display: block;
      flex-direction: row;
      line-height: 10px;
- 
     }
+
 aside .sidebar ul li:hover{
         color: #512EA9;
         background-color: #EDE7F6;
         border-radius: 10px;
     }
+
 #disable{
         background-color: white;
         color: rgb(132, 133, 135);
@@ -224,11 +244,11 @@ aside .sidebar ul li:hover{
         background-color: white;
         color: rgb(132, 133, 135);
     }
-    #disable:hover{
+
+#disable:hover{
         background-color: white;
         color: rgb(132, 133, 135);
     }
-
     
 aside ul li a{
         text-decoration: none;
@@ -237,24 +257,49 @@ aside ul li a{
     }
 
 aside  ul li i{
-    font-size: 1.1em;
+    font-size: 16px;
     padding-right: 10px;
 }
+
 aside ul li .bages{
     background-color: #2196F3;
     border: 1px solid #2196F3;
     color: white;
-    font-size: 0.875rem;;
+    font-size: 12px;
     border-radius: 48%;
     padding: 6px 10px;
-
 }
+
 aside ul li .beges-perent{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
- .box{
+
+#bages-c{
+    padding: 3px 4px; 
+    margin-right: 5px;  
+    float: left;
+}
+
+#bages-coded{
+    border-radius: 20px; 
+    padding: 4px ;  
+    display: flex; 
+    align-items: center;
+}
+
+#bages-outline{
+    background-color: white; 
+    border-radius: 20px; 
+    color: #1E88E5;
+}
+
+.spacebox{
+    display: inline-flex;
+    }
+
+.box{
     background-color:#E3F2FD;
     width: 220px;
     height: 120px;
@@ -262,32 +307,64 @@ aside ul li .beges-perent{
     border-radius: 10px;
     padding: 15px;
     color: #2196F3;
-    font-size: 0.9em;
+    font-size: 10px;
     line-height: 16px;
-    
 }
+
 .box i{
     background-color: white;
     padding: 14px;
     border-radius: 10px;
-    font-size: 1.2em;
+    font-size: 18px;
 }
+.spaceboxmain{
+    font-size: 12px; 
+    padding-left: 2px; 
+    color: #1565C0;
+}
+.spacesmallhead{
+    font-size: 0.9em; 
+    color: rgb(132, 133, 135); 
+    line-height: 40px;
+}
+.progressword{
+    margin-left: 100px;
+    color: rgb(11, 10, 10);
+}
+.progress-block{
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
 #file{
     width: 180px;
 }
+
 aside .version span{
     background-color: #f8f4f4;
     border-radius: 14px;
     color: rgb(132, 133, 135);
     padding: 4px;
 }
+
 aside .version{
     text-align: center;
 }
+
 aside a{
     text-decoration: none;
+}   
+.flex-li-containt{
+    display: inline-flex;
+    width: 260px;
 }
+
 /* dropdown */
+#dropdown{
+    display: flex; 
+    flex-wrap: wrap;
+}
 
 #dropdown-content{
     width: 200px;
@@ -300,26 +377,24 @@ aside a{
     position: relative;
     display: none;
 }
-#dropdown-content div{
-    margin: 0px;
-    padding: 0px;
-}
 
 #dropdown-content a{
     display:block;
     color: rgb(132, 133, 135);
 }
+
 #dropdown-content a:hover{
     color: #512EA9;
     background-color: none;
 }
+
 #dropdown>div:hover{
     display: block;
 }
    
 /* End Sidebar */
 
-    /* <!-- Maint containt start --> */
+ /* Maint containt start */
     main{
         margin-left: 258px;
         width: 1100px;
@@ -329,8 +404,8 @@ aside a{
         border-radius: 10px;
         position: relative;
         z-index: 0;
-        
     }
+
     #maincontaint{
         box-sizing: border-box;
         width: 680px;
@@ -340,15 +415,18 @@ aside a{
         justify-content: space-between;
         z-index: 0;
     }
+
     .main{
         width:690px;
         height: 100px;
     }
+
     .revenue-border{
         width:690px;
         display: inline-flex;
         justify-content: space-between;
     }
+
     .left-main{
         box-sizing: border-box;
         width: 340px;
@@ -360,10 +438,11 @@ aside a{
         line-height: 32px;
         font-size: 14px;
         font-style: inherit;
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .leftinner-right{
         font-size: 60px;
         color: #B39CDB;
@@ -372,9 +451,9 @@ aside a{
         border-radius: 100%;
         padding: 10px 20px;
         text-align: center;
-        letter-spacing: 0em;
         font-weight: 400;
     }
+
     .right-main{
         box-sizing: border-box;
         width: 340px;
@@ -386,10 +465,11 @@ aside a{
         line-height: 32px;
         font-size: 15px;
         font-style: inherit;
-        display: inline-flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     .rightinner-right{
         font-size: 60px;
         color: #90CAF9;
@@ -398,9 +478,9 @@ aside a{
         border-radius: 100%;
         padding: 10px 12px;
         text-align: center;
-        letter-spacing: 0em;
         font-weight: 500px;
     }
+
     .tableheader{
         margin-top: 20px;
         background-color:white;
@@ -417,6 +497,7 @@ aside a{
         z-index: 1;
         border-bottom: 1px solid  #EDE7F6;
     }
+
     .customers-table{
         box-sizing: border-box;
         width:690px;
@@ -425,6 +506,7 @@ aside a{
         border: none; 
         overflow: auto hidden;
     }
+
     .customers-table:hover{
         overflow: auto; 
     }
@@ -432,45 +514,53 @@ aside a{
     .customers-table::-webkit-scrollbar{
         width: 6px;
     }
+
     .customers-table::-webkit-scrollbar-track{
        border-radius: 10px;
     }
+
     .customers-table::-webkit-scrollbar-thumb{
         border-radius: 10px;
         background-color: #788392;
      }
+
     .customers-table tr{
         font-size: 14px;
         color: rgb(132, 133, 135);
         line-height: 40px;
-
     }
+
     .customers-table tr:hover{
         background-color: #F8FAFC;
         border-color: #F8FAFC;
         border: none;
     }
+
     .customers-table td, th{
         border-bottom: 1px solid #EDE7F6;
         padding: 5px 15px;
         color: #281926;
         text-align: left;
     }
+
     .customers-table td span{
         font-size: 20px;
         font-weight: 100px;
         z-index: 0;
     }
+
     .customers-table tr th{
         width: 350px;
-        margin: 0px;
     }
+
     .customers-table tr th:last-of-type{
         text-align: right;
     }
+
     .customers-table tr td:last-of-type{
         text-align: right;
     }
+
     .tablefooter{
         text-align: left;
         box-sizing: border-box;
@@ -487,6 +577,7 @@ aside a{
         padding-right: 24px;
         border-top: 1px solid  #EDE7F6;
     }
+
     .sidebar-right{
         width:380px;
         height: auto;
@@ -494,12 +585,21 @@ aside a{
         flex-direction: column;
         margin: 0px 20px;
     }
+    .countstatus{
+        font-weight: 5px;
+    }
+    table span{
+        color: #697586;
+        font-size: 12px;
+    }
+
     .innersidebar-right{
         width:380px;
         height: 200px;
         display: flex;
         justify-content: center;
     }
+
     .sidebar-right td{
         box-sizing: border-box;
         width: 170px;
@@ -513,6 +613,7 @@ aside a{
         align-items: center;
         border: 1px solid #EEF2F6  ;
     }
+    
     .sidebar-right .icons{
         background-color: #E3F2FD;
         color: #673AB7;
@@ -528,6 +629,10 @@ aside a{
         justify-content: center;
         align-items: center;
     }
+    .revenue-containt{
+        display:flex; 
+        flex-direction: column;
+    }
     .revenue{
         margin-top: 20px;
         width: 340px;
@@ -542,8 +647,8 @@ aside a{
         border-bottom: 1px solid   #EDE7F6;
         border-top-right-radius: 10px;
         border-top-left-radius: 10px;
-
     }
+
     .totalRevenue-table{
         width:340px;
         height: 400px;
@@ -552,42 +657,48 @@ aside a{
         border-bottom-left-radius: 10px;
         overflow-x: auto hidden;
         overflow-y: auto hidden;
-
     }
+
     .totalRevenue-table:hover{
         overflow-x: auto;
         overflow-y: auto;
-
     }
+
     .totalRevenue-table::-webkit-scrollbar{
         width: 2px;
         height: 2px;
     }
+
     .totalRevenue-table::-webkit-scrollbar-track{
        border-radius: 10px;
     }
+
     .totalRevenue-table::-webkit-scrollbar-thumb{
         border-radius: 10px;
         background-color: #788392;
      }
 
+
     .revenue-list{
-        display: inline-flex; 
+        display: flex; 
         width: 320px; 
         justify-content: space-between;
         border-bottom: 1px solid  #EDE7F6;
         font-size: 14px;
     }
+
     .greenicon{
         padding-right:10px; 
         color: #00C853;
         padding: 20px;
     }
+
     .redicon{
         padding-right:10px; 
         color: red;
         padding: 20px;
     }
+
     .revenue-list:hover{
         background-color: #EDE7F6;
         border-color: #EDE7F6;
@@ -608,7 +719,15 @@ aside a{
         color: white;
         position: relative;
         overflow: hidden;   
+        font-size: 14px;
+        
     }
+    #daily-user-pages{
+        background-color: #2196F3; 
+        margin-top: 0px;
+        
+    }
+
     .daily-user-icon{
         text-align: left;
         margin: 0px;
@@ -627,6 +746,7 @@ aside a{
         transform-origin: 0px 0px;
         transform: rotateZ(20deg);
     }
+
     .daily-view-icon{
         text-align: left;
         margin: 0px;
@@ -644,6 +764,7 @@ aside a{
         transform-origin: 0px 0px;
         transform: rotateZ(20deg);
     }
+
     .setting-box{
         margin-left: 75%;
         padding: 15px;
@@ -658,325 +779,339 @@ aside a{
         border-radius: 100% 100% 20% 100%;
         box-shadow: 0px 10px 15px 0  rgb(127, 107, 214, 0.5);
     }
+
     .setting-animation{
         animation-name: spinner;
         animation-duration: 1s;
         animation-timing-function: ease-out;
         animation-iteration-count: infinite;
     }
+
     @keyframes spinner{
         100%{ transform: rotate(100deg);}
-
     }
-    
+
 /* difault start */
+
 #default{
     background-color: #1E88E5;
     color: white;
     font-size: 100px;
     }
     /* difault End */
-         /* <!-- Maint containt End --> */
+    /* <!-- Maint containt End --> */
 
     /* start media queray */
  @media screen and (max-width: 1200px){
     .navbar-first-part{
         background-color: white;
-        width: 260px;
+        width: 300px;
         height: 5.1em;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        position: fixed;
         z-index: 1;
         }
+
         .nav-mono{
         margin: 10px;
         font-family: 'Roboto', sans-serif;
-        
         }
+
         .navbutton{
-            display: none;
+            display: block;
+
         }
         
         .navbar-second-part{
             width: 100%;
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: space-between;
         }
+
         .input-searchbar{
-            width: 15em;
+            width: 300px;
             height: 50px;
             margin-left: 300px;
         }
+
         .input-searchbar i{
             display: block;
         }
 
-            .sidebar{
-                position: relative;
-                z-index: 1;
-            }
-            aside{
-                width: 250px;
-                height: calc(100vh - 56px);
+        .sidebar{
+            width: 20px;
+        }
+    
+         aside{
+                width: 20px;
                 z-index: 1;
                 height: 100%;
                 scrollbar-gutter:calc(10px);
                 box-sizing: border-box;
-                margin: 0px;  
                 overflow: auto hidden; 
-                position: fixed;
+                
             }
-            aside:hover{
-                overflow: auto;
+            main{
+                margin-left: 10px;
             }
-        
-    #maincontaint{
-        width: 100%;
-    }
-    .main{
-        width: 30%;
-        height: 100px;
-    }
-    .revenue-border{
-        width:500px;
-        display: flex;
-        flex-direction: column;
-    }
-     .left-main{
-        width: auto;
-        height: 130px;
-        margin-bottom: 20px;
-        
-    }
-    .right-main{
-        box-sizing: border-box;
-        width: 500px;
-        height: 130px;
-    } 
-    .tableheader{
-        margin-top: 20px;
-        background-color:white;
-        width: 440px;
-        height: 20px;
-    }
-    .customers-table{
-        width:500px;
-    }
-    .customers-table tr th{
-        width: 100px;
-        margin: 0px;
-    }
-    .tablefooter{
-        box-sizing: border-box;
-        width: 500px;
-    }
-    .sidebar-right{
-        width: 500px;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-    }
-    .innersidebar-right{
-        font-size: 20px;
-        width:540px;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-    }
-    .sidebar-right td{
-        width: 260px;
-        height: 100px;
-    }
-    .sidebar-right .icons{
-        width: 50px;
-        height: 50px;
-    }
-    .revenue{
-        width: 520px;
-        height: 80px;
-    }
-    .totalRevenue-table{
-        width: 520px;
-        height: 400px;
-    }
-    .revenue-list{
-        display: inline-flex; 
-        width: 280px; 
-        justify-content: space-between;
-    }
-    .daily-user{
-        margin: 20px;
-        width: 520px;
-        height: 100px;
-        font-size: 16px;
-        background-color: #673AB7;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        line-height: 30px;
-        color: white;
-        position: relative;
-        overflow: hidden;   
-    }
-    .setting-box{
-        right: 10px;
-    }
+           
+            #maincontaint{
+                width: 100%;
+            }
+
+            .main{
+                width: 30%;
+                height: 100px;
+            }
+
+            .revenue-border{
+                width:500px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .left-main{
+                width: auto;
+                height: 130px;
+                margin-bottom: 20px;
+            }
+
+            .right-main{
+                box-sizing: border-box;
+                width: 500px;
+                height: 130px;
+            } 
+
+            .tableheader{
+                margin-top: 20px;
+                background-color:white;
+                width: 440px;
+                height: 20px;
+            }
+
+            .customers-table{
+                width:500px;
+            }
+
+            .customers-table tr th{
+                width: 100px;
+                margin: 0px;
+            }
+
+            .tablefooter{
+                box-sizing: border-box;
+                width: 500px;
+            }
+
+            .sidebar-right{
+                width: 500px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .innersidebar-right{
+                font-size: 20px;
+                width:540px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .sidebar-right td{
+                width: 260px;
+                height: 100px;
+            }
+
+            .sidebar-right .icons{
+                width: 50px;
+                height: 50px;
+            }
+
+            .revenue{
+                width: 520px;
+                height: 80px;
+            }
+
+            .totalRevenue-table{
+                width: 520px;
+                height: 400px;
+            }
+
+            .revenue-list{
+                display: inline-flex; 
+                width: 520px; 
+                justify-content: space-between;
+            }
+
+            .daily-user{
+                margin-top: 20px;
+                width: 520px;
+                height: 100px;
+                font-size: 16px;
+                background-color: #673AB7;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                line-height: 30px;
+                color: white;
+                position: relative;
+                overflow: hidden;   
+            }
+
+            .setting-box{
+                right: 10px;
+            }
 }
 
 
 
 
 
-  @media screen and (max-width: 900px){
+@media screen and (max-width: 900px){
     .navbar-first-part{
-        background-color: white;
-        width: 260px;
+        width: 200px;
         height: 5.1em;
         display: flex;
         justify-content: center;
         align-items: center;
         position: fixed;
+        left: 0px;
         z-index: 1;
         }
         .nav-mono{
-        margin: 10px;
-        font-family: 'Roboto', sans-serif;
-        
-        }
-        .navbutton{
             display: none;
         }
+        .navbutton{
+            display: block;
+        }
         .input-searchbar{
-            width: 15em;
-            height: 50px;
-            margin-left: 60px;
+            display: none;
         }
         .navbar-second-part{
+            margin-left: 200px;
             width: 100%;
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: space-between;
         }
         
         
-            .sidebar{
-                position: relative;
-                z-index: 1;
-            }
-            aside{
-                height: calc(100vh - 56px);
-                z-index: 1;
-                height: 100%;
-                scrollbar-gutter:calc(10px);
-                box-sizing: border-box;
-                margin: 0px;  
-                overflow: auto hidden; 
-                position: fixed;
-            }
-            aside:hover{
-                overflow: auto;
-            }
-    main{
-        width: 100%;
-        height: auto;
-        margin-right: 10px;
-        
-    }
-    #maincontaint{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        .sidebar{
+                width: 20px;
+        }
+            
+        main{
+            width: 100%;
+            height: auto;
+            margin-right: 10px;
+        }
+           
+        #maincontaint{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-        
-    }
-    .main{
-        width: 100%;
-        height: auto;
-    }
-    .revenue-border{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-    }
-     .left-main{
-        width: 100%;
-        height: 130px;
-        margin-bottom: 20px;
-        
-    }
-    .right-main{
-        box-sizing: border-box;
-        width: 100%;
-        height: 130px;
-    } 
-    .tableheader{
-        margin-top: 20px;
-        background-color:white;
-        width: 92%;
-        height: 20px;
-    }
-    .customers-table{
-        width:100%;
-    }
-  
-    .tablefooter{
-        box-sizing: border-box;
-        width: 100%;
-    }
-    .sidebar-right{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      
-    }
-    .innersidebar-right{
-        margin-top: 20px;
-        width:100%;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-    }
-    .innersidebar-right table{
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .sidebar-right td{
-        width: 50%;
-        height: 100px;
-    }
-    .sidebar-right .icons{
-        width: 48px;
-        height: 50px;
-    }
-    .revenue{
-        width: 97%;
-        height: 80px;
-    }
-    .totalRevenue-table{
-        width:97%;
-        height: 400px;
-    }
-    .revenue-list{
-        display: inline-flex; 
-        width: 97%; 
-        justify-content: space-between;
-    }
-    .daily-user{
-        width: 97%;
-        height: 100px;
-    }
-    .setting-box{
-        margin-top: 200px;
-        right: 10px;
-        font-size: 30px;
-    }
+        .main{
+            width: 100%;
+            height: auto;
+        }
+
+        .revenue-border{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-main{
+            width: 100%;
+            height: 130px;
+            margin-bottom: 20px;
+        }
+
+        .right-main{
+            box-sizing: border-box;
+            width: 100%;
+            height: 130px;
+        } 
+
+        .tableheader{
+            margin-top: 20px;
+            background-color:white;
+            width: 92%;
+            height: 20px;
+        }
+
+        .customers-table{
+            width:100%;
+        }
+    
+        .tablefooter{
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .sidebar-right{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .innersidebar-right{
+            margin-top: 20px;
+            width:100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .innersidebar-right table{
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-right td{
+            width: 50%;
+            height: 100px;
+        }
+
+        .sidebar-right .icons{
+            width: 48px;
+            height: 50px;
+        }
+
+        .revenue{
+            width: 97%;
+            height: 80px;
+        }
+
+        .totalRevenue-table{
+            width:97%;
+            height: 400px;
+        }
+
+        .revenue-list{
+            display: inline-flex; 
+            width: 97%; 
+            justify-content: space-between;
+        }
+
+        .daily-user{
+            width: 97%;
+            height: 100px;
+        }
+
+        .setting-box{
+            margin-top: 200px;
+            right: 10px;
+            font-size: 30px;
+        }
 } 
 /* End media query */
