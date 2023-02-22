@@ -177,7 +177,6 @@ nav .nav-image{
     position: relative;
 }
 
-
 aside{
     width: 260px;
     height: auto;
@@ -185,11 +184,7 @@ aside{
     position: fixed;
     height: 100%;
     box-sizing: border-box;
-    overflow: auto hidden; 
-}
-
-aside:hover{
-    overflow: auto;
+    overflow: auto  
 }
 
 aside::-webkit-scrollbar{
@@ -504,15 +499,11 @@ aside a{
         height: 360px;
         background-color: white;
         border: none; 
-        overflow: auto hidden;
-    }
-
-    .customers-table:hover{
-        overflow: auto; 
-    }
+        overflow: auto;
+    }   
    
     .customers-table::-webkit-scrollbar{
-        width: 6px;
+        width: 4px;
     }
 
     .customers-table::-webkit-scrollbar-track{
@@ -655,17 +646,11 @@ aside a{
         background-color: white;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        overflow-x: auto hidden;
-        overflow-y: auto hidden;
-    }
-
-    .totalRevenue-table:hover{
-        overflow-x: auto;
-        overflow-y: auto;
+        overflow: auto ;
     }
 
     .totalRevenue-table::-webkit-scrollbar{
-        width: 2px;
+        width: 4px;
         height: 2px;
     }
 
