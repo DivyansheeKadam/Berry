@@ -414,6 +414,7 @@ aside a{
     .main{
         width:690px;
         height: 100px;
+        padding-right: 20px;
     }
 
     .revenue-border{
@@ -571,11 +572,10 @@ aside a{
     }
 
     .sidebar-right{
-        width:380px;
+        width:280px;
         height: auto;
         display: flex;
         flex-direction: column;
-        margin: 0px 20px;
     }
     .countstatus{
         font-weight: 5px;
@@ -615,7 +615,6 @@ aside a{
         padding: 10px;
         border-radius: 12px;
         font-size: 24px;
-        margin-right: 20px;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -1447,10 +1446,6 @@ aside a{
             }
 }
 
-
-
-
-
 @media screen and (max-width: 900px){
     .navbar-first-part{
         width: 200px;
@@ -1523,7 +1518,7 @@ aside a{
         .tableheader{
             margin-top: 20px;
             background-color:white;
-            width: 92%;
+            width: 88%;
             height: 20px;
         }
 
@@ -1538,9 +1533,6 @@ aside a{
         .sidebar-right{
             width: 100%;
             height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
         .innersidebar-right{
