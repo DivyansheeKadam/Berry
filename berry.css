@@ -318,53 +318,11 @@ aside a{
 }
    
 /* End Sidebar */
-@media screen and (max-width: 900px){
-.navbar-first-part{
-background-color: white;
-width: 260px;
-height: 5.1em;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1;
-position: fixed;
-z-index: 1;
-}
-.nav-mono{
-margin: 10px;
-font-family: 'Roboto', sans-serif;
-z-index: 1;
-}
-.navbutton{
-    display: none;
-}
-.navbar-second-part{
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 10px;
-    z-index: 0;
-    background-color: rgb(132, 133, 135, 0.2);
-}
-
-
-/* side-Bar */
-    .sidebar{
-        position: relative;
-        z-index: 1;
-    }
-    aside{
-        width: 230px;
-        overflow: auto;
-    }
-    }
 
     /* <!-- Maint containt start --> */
     main{
         margin-left: 258px;
-        width: calc(100%-260px);
+        width: 1100px;
         height: 980px;
         margin-top: 88px;
         background-color: rgb(238, 242, 246);
@@ -375,7 +333,7 @@ z-index: 1;
     }
     #maincontaint{
         box-sizing: border-box;
-        width: calc(100%-260px);
+        width: 680px;
         padding: 20px;
         border-radius: 20px;
         display: inline-flex;
@@ -529,13 +487,12 @@ z-index: 1;
         padding-right: 24px;
         border-top: 1px solid  #EDE7F6;
     }
-
-
     .sidebar-right{
         width:380px;
         height: auto;
         display: flex;
         flex-direction: column;
+        margin: 0px 20px;
     }
     .innersidebar-right{
         width:380px;
@@ -572,7 +529,7 @@ z-index: 1;
         align-items: center;
     }
     .revenue{
-        margin: 20px 20px 0px 20px;
+        margin-top: 20px;
         width: 340px;
         height: 80px;
         background-color: white;
@@ -588,19 +545,23 @@ z-index: 1;
 
     }
     .totalRevenue-table{
-        margin-left: 20px;
         width:340px;
         height: 400px;
         background-color: white;
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
-        overflow: auto hidden;
+        overflow-x: auto hidden;
+        overflow-y: auto hidden;
+
     }
     .totalRevenue-table:hover{
-        overflow: auto;
+        overflow-x: auto;
+        overflow-y: auto;
+
     }
     .totalRevenue-table::-webkit-scrollbar{
-        width: 6px;
+        width: 2px;
+        height: 2px;
     }
     .totalRevenue-table::-webkit-scrollbar-track{
        border-radius: 10px;
@@ -634,7 +595,7 @@ z-index: 1;
     }
     
     .daily-user{
-        margin: 20px;
+        margin: 20px 0px;
         width: 340px;
         height: 100px;
         background-color: #673AB7;
@@ -684,7 +645,7 @@ z-index: 1;
         transform: rotateZ(20deg);
     }
     .setting-box{
-        margin-left: 75.2%;
+        margin-left: 75%;
         padding: 15px;
         background-color: #512EA9;
         color: white;
@@ -710,11 +671,312 @@ z-index: 1;
     
 /* difault start */
 #default{
-background-color: #1E88E5;
-color: white;
-font-size: 100px;
-}
-/* difault End */
-
+    background-color: #1E88E5;
+    color: white;
+    font-size: 100px;
+    }
+    /* difault End */
          /* <!-- Maint containt End --> */
 
+    /* start media queray */
+ @media screen and (max-width: 1200px){
+    .navbar-first-part{
+        background-color: white;
+        width: 260px;
+        height: 5.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        }
+        .nav-mono{
+        margin: 10px;
+        font-family: 'Roboto', sans-serif;
+        
+        }
+        .navbutton{
+            display: none;
+        }
+        
+        .navbar-second-part{
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .input-searchbar{
+            width: 15em;
+            height: 50px;
+            margin-left: 300px;
+        }
+        .input-searchbar i{
+            display: block;
+        }
+
+            .sidebar{
+                position: relative;
+                z-index: 1;
+            }
+            aside{
+                width: 250px;
+                height: calc(100vh - 56px);
+                z-index: 1;
+                height: 100%;
+                scrollbar-gutter:calc(10px);
+                box-sizing: border-box;
+                margin: 0px;  
+                overflow: auto hidden; 
+                position: fixed;
+            }
+            aside:hover{
+                overflow: auto;
+            }
+        
+    #maincontaint{
+        width: 100%;
+    }
+    .main{
+        width: 30%;
+        height: 100px;
+    }
+    .revenue-border{
+        width:500px;
+        display: flex;
+        flex-direction: column;
+    }
+     .left-main{
+        width: auto;
+        height: 130px;
+        margin-bottom: 20px;
+        
+    }
+    .right-main{
+        box-sizing: border-box;
+        width: 500px;
+        height: 130px;
+    } 
+    .tableheader{
+        margin-top: 20px;
+        background-color:white;
+        width: 440px;
+        height: 20px;
+    }
+    .customers-table{
+        width:500px;
+    }
+    .customers-table tr th{
+        width: 100px;
+        margin: 0px;
+    }
+    .tablefooter{
+        box-sizing: border-box;
+        width: 500px;
+    }
+    .sidebar-right{
+        width: 500px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .innersidebar-right{
+        font-size: 20px;
+        width:540px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .sidebar-right td{
+        width: 260px;
+        height: 100px;
+    }
+    .sidebar-right .icons{
+        width: 50px;
+        height: 50px;
+    }
+    .revenue{
+        width: 520px;
+        height: 80px;
+    }
+    .totalRevenue-table{
+        width: 520px;
+        height: 400px;
+    }
+    .revenue-list{
+        display: inline-flex; 
+        width: 280px; 
+        justify-content: space-between;
+    }
+    .daily-user{
+        margin: 20px;
+        width: 520px;
+        height: 100px;
+        font-size: 16px;
+        background-color: #673AB7;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        color: white;
+        position: relative;
+        overflow: hidden;   
+    }
+    .setting-box{
+        right: 10px;
+    }
+}
+
+
+
+
+
+  @media screen and (max-width: 900px){
+    .navbar-first-part{
+        background-color: white;
+        width: 260px;
+        height: 5.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        }
+        .nav-mono{
+        margin: 10px;
+        font-family: 'Roboto', sans-serif;
+        
+        }
+        .navbutton{
+            display: none;
+        }
+        .input-searchbar{
+            width: 15em;
+            height: 50px;
+            margin-left: 60px;
+        }
+        .navbar-second-part{
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        
+            .sidebar{
+                position: relative;
+                z-index: 1;
+            }
+            aside{
+                height: calc(100vh - 56px);
+                z-index: 1;
+                height: 100%;
+                scrollbar-gutter:calc(10px);
+                box-sizing: border-box;
+                margin: 0px;  
+                overflow: auto hidden; 
+                position: fixed;
+            }
+            aside:hover{
+                overflow: auto;
+            }
+    main{
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
+        
+    }
+    #maincontaint{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .main{
+        width: 100%;
+        height: auto;
+    }
+    .revenue-border{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+     .left-main{
+        width: 100%;
+        height: 130px;
+        margin-bottom: 20px;
+        
+    }
+    .right-main{
+        box-sizing: border-box;
+        width: 100%;
+        height: 130px;
+    } 
+    .tableheader{
+        margin-top: 20px;
+        background-color:white;
+        width: 92%;
+        height: 20px;
+    }
+    .customers-table{
+        width:100%;
+    }
+  
+    .tablefooter{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .sidebar-right{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+    }
+    .innersidebar-right{
+        margin-top: 20px;
+        width:100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .innersidebar-right table{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .sidebar-right td{
+        width: 50%;
+        height: 100px;
+    }
+    .sidebar-right .icons{
+        width: 48px;
+        height: 50px;
+    }
+    .revenue{
+        width: 97%;
+        height: 80px;
+    }
+    .totalRevenue-table{
+        width:97%;
+        height: 400px;
+    }
+    .revenue-list{
+        display: inline-flex; 
+        width: 97%; 
+        justify-content: space-between;
+    }
+    .daily-user{
+        width: 97%;
+        height: 100px;
+    }
+    .setting-box{
+        margin-top: 200px;
+        right: 10px;
+        font-size: 30px;
+    }
+} 
+/* End media query */
