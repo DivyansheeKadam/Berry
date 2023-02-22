@@ -730,7 +730,6 @@ aside a{
 
     .daily-user-icon{
         text-align: left;
-        margin: 0px;
         font-size: 60px;
         color: #9C7FD0;
         background-color: #673AB7;
@@ -749,7 +748,6 @@ aside a{
 
     .daily-view-icon{
         text-align: left;
-        margin: 0px;
         font-size: 85px;
         color: #90CAF9;
         border: none;
@@ -897,7 +895,6 @@ aside a{
 
             .customers-table tr th{
                 width: 100px;
-                margin: 0px;
             }
 
             .tablefooter{
