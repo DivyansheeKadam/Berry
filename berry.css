@@ -147,7 +147,7 @@ nav #nav-skey-first{
 
 nav .nav-skey{
     font-size: 18px;
-    padding: 5px 10px;
+    padding: 10px 8px;
     background-color:#E3F2FD;
     color: #2196F3;
     border-radius: 5px;
@@ -391,14 +391,15 @@ aside a{
 
  /* Maint containt start */
     main{
-        margin-left: 258px;
-        width: 1100px;
+        margin-left: 250px;
+        width: 1090px;
         height: 980px;
         margin-top: 88px;
         background-color: rgb(238, 242, 246);
-        border-radius: 10px;
+        border-radius: 20px;
         position: relative;
         z-index: 0;
+        padding-top: 10px;
     }
 
     #maincontaint{
@@ -412,7 +413,7 @@ aside a{
     }
 
     .main{
-        width:690px;
+        width:692px;
         height: 100px;
         padding-right: 20px;
     }
@@ -425,7 +426,7 @@ aside a{
 
     .left-main{
         box-sizing: border-box;
-        width: 340px;
+        width: 335px;
         height: 130px;
         border-radius: 10px;
         background-color: #673AB7;
@@ -452,7 +453,7 @@ aside a{
 
     .right-main{
         box-sizing: border-box;
-        width: 340px;
+        width: 335px;
         height: 130px;
         border-radius: 10px;
         background-color: #2196F3;
@@ -480,7 +481,7 @@ aside a{
     .tableheader{
         margin-top: 20px;
         background-color:white;
-        width: 630px;
+        width: 690px;
         height: 20px;
         color: black; 
         display: flex;
@@ -488,10 +489,12 @@ aside a{
         align-items: center;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        margin-right: 20px;
-        padding: 30px;
         z-index: 1;
+        padding: 30px 0px;
         border-bottom: 1px solid  #EDE7F6;
+    }
+    .headtext{
+        padding: 20px;
     }
 
     .customers-table{
@@ -572,40 +575,49 @@ aside a{
     }
 
     .sidebar-right{
-        width:280px;
+        width:340px;
         height: auto;
         display: flex;
         flex-direction: column;
-    }
-    .countstatus{
-        font-weight: 5px;
-    }
-    table span{
-        color: #697586;
-        font-size: 12px;
+
     }
 
     .innersidebar-right{
-        width:380px;
-        height: 200px;
+        width: 340px;
+        height: 180px;
         display: flex;
-        justify-content: center;
-    }
-
-    .sidebar-right td{
-        box-sizing: border-box;
-        width: 170px;
-        height: 100px;
+        flex-direction: row;
+        justify-content: left;
         background-color: white;
-        text-align: center;
-        padding: 20px;
-        font-size: 14px;
-        display: inline-flex;
-        justify-items: center;
-        align-items: center;
-        border: 1px solid #EEF2F6  ;
+        border-radius: 10px;
+        overflow: hidden;
     }
-    
+    .containt-row{
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .sidebar-container{
+        width: 130px;
+    }
+    .sidebar-container{
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid rgb(238, 242, 246);
+        padding: 20px;
+        }
+
+    .sidebar-container span{
+        color: #697586;
+        font-size: 12px;
+    }
+    .countstatus{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 20px; 
+    }
+   
     .sidebar-right .icons{
         background-color: #E3F2FD;
         color: #673AB7;
@@ -620,10 +632,12 @@ aside a{
         justify-content: center;
         align-items: center;
     }
+
     .revenue-containt{
         display:flex; 
         flex-direction: column;
     }
+
     .revenue{
         margin-top: 20px;
         width: 340px;
@@ -749,7 +763,7 @@ aside a{
     }
 
     .setting-box{
-        margin-left: 75%;
+        margin-left: 76%;
         padding: 15px;
         background-color: #512EA9;
         color: white;
@@ -777,7 +791,7 @@ aside a{
 /* difault start */
 
 #default{
-    background-color: #1E88E5;
+    background-color: hsl(208, 79%, 51%);
     color: white;
     font-size: 100px;
     }
@@ -799,7 +813,7 @@ aside a{
     
     .navbar-first-part{
         background-color: white;
-        width: 320px;
+        width: 300px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -816,7 +830,6 @@ aside a{
         color: #5E35B1;
         border-radius: 10px;
         box-sizing: border-box;
-        border: none;
     }
     .navbutton:hover{
         background-color: #5E35B1;
@@ -1212,7 +1225,7 @@ aside a{
         }
     
         .tableheader{
-            width: 940px;
+            width: 1000px;
             height: 20px;
         }
     
@@ -1236,38 +1249,46 @@ aside a{
             height: 70px;
         }
     
-        .sidebar-right{
-            width: 100%;
-            height: auto;
-        }
         
-        .innersidebar-right{
-            width: 100%;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-        }
+    .sidebar-right{
+        width:430px;
+        height: auto;
+    }
+
+    .innersidebar-right{
+        width: 430px;
+        height: 180px;
+    }
     
-        .sidebar-right td{
-            box-sizing: border-box;
-            width: 200px;
-            height: 100px;
+    .sidebar-container{
+        width: 180px;
+    }
+    .sidebar-container{
+        display: inline-flex;
+        padding: 20px;
         }
 
+    .countstatus{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 40px;
+    }
+    
         .revenue{
-            width: 400px;
+            width: 430px;
         }
     
         .totalRevenue-table{
-            width:400px;
+            width:430px;
         }
         
         .revenue-list{
-            width: 395px; 
+            width: 425px; 
         }
         
         .daily-user{
-            width: 400px;
+            width: 430px;
             height: 100px;
         }
     
@@ -1283,70 +1304,57 @@ aside a{
 
  @media screen and (max-width: 1200px) {
     .navbar-first-part{
-        background-color: white;
-        width: auto;
+        width: 320px;
         height: 5.1em;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        z-index: 1;
         }
 
         .nav-mono{
         margin: 10px;
-        font-family: 'Roboto', sans-serif;
         }
 
-        .navbutton{
-            display: block;
-
-        }
-        
         .navbar-second-part{
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
         }
 
         .input-searchbar{
             width: 300px;
             height: 50px;
-            margin-left: 300px;
-        }
-
-        .input-searchbar i{
-            display: block;
         }
 
         .sidebar{
-            width: 20px;
+            width: 40px;
+            display: none;
         }
     
          aside{
-                width: 20px;
-                z-index: 1;
-                height: 100%;
-                scrollbar-gutter:calc(10px);
-                box-sizing: border-box;
-                overflow: auto hidden; 
+                width: 40px;
+                display: none;
                 
             }
             main{
-                margin-left: 10px;
+                margin-left: 50px;
+                width: 1110px;
+                height: 980px;
+                margin-top: 90px;
+                border-radius: 10px;
             }
-           
+        
             #maincontaint{
-                width: 100%;
+                width: 650px;
+                padding: 20px;
             }
-
+        
             .main{
-                width: 30%;
+                width:650px;
                 height: 100px;
+                margin-right: 5px;
             }
-
+        
             .revenue-border{
-                width:500px;
+                width: 550px;
                 display: flex;
                 flex-direction: column;
             }
@@ -1358,75 +1366,61 @@ aside a{
             }
 
             .right-main{
-                box-sizing: border-box;
-                width: 500px;
+                width: auto;
                 height: 130px;
             } 
 
             .tableheader{
                 margin-top: 20px;
-                background-color:white;
-                width: 440px;
+                width: auto;
                 height: 20px;
             }
 
             .customers-table{
-                width:500px;
-            }
-
-            .customers-table tr th{
-                width: 100px;
+                width:auto;
             }
 
             .tablefooter{
                 box-sizing: border-box;
-                width: 500px;
-            }
-
-            .sidebar-right{
-                width: 500px;
-                height: auto;
-                display: flex;
-                flex-direction: column;
+                width: auto;
             }
 
             .innersidebar-right{
-                font-size: 20px;
-                width:540px;
-                height: 200px;
+                width: 495px;
+                height: 180px;
+            }
+            .sidebar-container{
+                width: 230px;
                 display: flex;
-                justify-content: center;
+                justify-content: space-evenly;
+                justify-items: left;
+                padding-left: 0px;
             }
-
-            .sidebar-right td{
-                width: 260px;
-                height: 100px;
+            .countstatus{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
             }
-
-            .sidebar-right .icons{
-                width: 50px;
-                height: 50px;
-            }
-
+           
             .revenue{
-                width: 520px;
+                width: 495px;
                 height: 80px;
             }
 
             .totalRevenue-table{
-                width: 520px;
+                width: 495px;
                 height: 400px;
             }
 
             .revenue-list{
                 display: inline-flex; 
-                width: 520px; 
+                width: 490px; 
                 justify-content: space-between;
             }
 
             .daily-user{
                 margin-top: 20px;
-                width: 520px;
+                width: 495px;
                 height: 100px;
                 font-size: 16px;
                 background-color: #673AB7;
@@ -1446,137 +1440,157 @@ aside a{
             }
 }
 
+
 @media screen and (max-width: 900px){
-    .navbar-first-part{
-        width: 200px;
-        height: 5.1em;
+    .navbar{
+        background-color: #FFFFFF;
+        width: 100%;
+        height: 100px;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        font-family:'Roboto', sans-serif;
         position: fixed;
-        left: 0px;
+        top: 0%;
         z-index: 1;
-        }
-        .nav-mono{
+    }
+    
+    .navbar-first-part{
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-mono{
+        display: none;
+    }
+    
+    .navbar-second-part{
+        margin-right: 20px;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: right;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    
+    .navbar-second-part input{
+        border: none;
+    }
+    
+    .input-searchbar{
+        display: none;
+    }
+    
+    .sidebar{
+            width: 40px;
             display: none;
         }
-        .navbutton{
-            display: block;
-        }
-        .input-searchbar{
-            display: none;
-        }
-        .navbar-second-part{
-            margin-left: 200px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        
-        
-        .sidebar{
-                width: 20px;
-              
-        }
-            
-        main{
-            width: 100%;
+
+    main{
+            width: 968px;
             height: auto;
-            margin-right: 10px;
+            margin: 5px;
+            margin-top: 90px;
         }
            
         #maincontaint{
-            width: 100%;
+            width: 968px;
             display: flex;
             flex-direction: column;
         }
 
         .main{
-            width: 100%;
+            width: 950px;
             height: auto;
         }
 
         .revenue-border{
-            width:100%;
+            width: 930px;
             display: flex;
             flex-direction: column;
         }
 
         .left-main{
-            width: 100%;
-            height: 130px;
-            margin-bottom: 20px;
+            width: auto;
+            height: 140px;
+            margin-bottom: 30px;
         }
 
         .right-main{
             box-sizing: border-box;
-            width: 100%;
-            height: 130px;
+            width: auto;
+            height: 140px;
         } 
 
         .tableheader{
-            margin-top: 20px;
+            margin-top: 30px;
             background-color:white;
-            width: 88%;
-            height: 20px;
+            width: 930px;
+            height: 30px;
+            font-size: 20px;
         }
 
         .customers-table{
-            width:100%;
+            width: 930px;
+        }
+
+        .customers-table table td, th{
+            font-size: 16px;
         }
     
         .tablefooter{
             box-sizing: border-box;
-            width: 100%;
+            width: 930px;
         }
         .sidebar-right{
-            width: 100%;
+            width: 930px;
             height: auto;
         }
 
         .innersidebar-right{
-            margin-top: 20px;
-            width:100%;
-            height: 200px;
+            width: 930px;
+            height: 220px;
+            margin-top: 30px;
+        }
+
+        .sidebar-container{
+            width: 410px;
             display: flex;
-            justify-content: center;
+            justify-content: left;
+            padding: 30px;
+            
         }
 
-        .innersidebar-right table{
-            width: 100%;
-            justify-content: space-between;
-            align-items: center;
-        }
 
-        .sidebar-right td{
-            width: 50%;
-            height: 100px;
-        }
+        .countstatus{
+            display: flex;
+            flex-direction: column;
+            margin-left: 150px;
+            text-align: center;
 
-        .sidebar-right .icons{
-            width: 48px;
-            height: 50px;
         }
-
+    
         .revenue{
-            width: 97%;
+            width: 930px;
             height: 80px;
+            margin-top: 30px;
         }
 
         .totalRevenue-table{
-            width:97%;
+            width: 930px;
             height: 400px;
         }
 
         .revenue-list{
             display: inline-flex; 
-            width: 97%; 
+            width: 920px; 
             justify-content: space-between;
         }
 
         .daily-user{
-            width: 97%;
+            margin-top: 30px;
+            width: 930px;
             height: 100px;
         }
 
